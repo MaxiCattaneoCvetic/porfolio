@@ -203,6 +203,15 @@ html{
     .container-fluid{
         flex-wrap: nowrap !important;
     }
+
+    .dropdown{
+        font-size: 0.5rem;
+    }
+
+    
+    .dropdown-menu li a{
+        font-size: 0.5rem;
+    }
     .collapse{
         font-size: 0.5rem;
     }
@@ -255,6 +264,8 @@ html{
 .contenedor-img{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
     .contenedor-img img{
         width: 8rem;
@@ -267,10 +278,14 @@ html{
     .contenedor-texto{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .container-typed{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .titulo {
         margin-top: 11%;
@@ -296,6 +311,7 @@ html{
     }
     .sk_d{
         word-break:break-all;
+        font-size: 0.5rem;
     }
     
 }
