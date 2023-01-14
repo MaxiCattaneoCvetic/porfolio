@@ -229,9 +229,12 @@ html{
     .div_proyect h3 {
         font-size: 1.1rem;
     }
-
+.contenedor-img{
+    display: flex;
+    flex-direction: column;
+}
     .contenedor-img img{
-        width: 10rem;
+        width: 8rem;
         height: auto;
         margin-left: 25%;
         animation-name: float;
@@ -240,10 +243,17 @@ html{
         animation-timing-function: ease-in-out;
         margin-top: 1rem;
     }
+    .contenedor-texto{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-typed{
+        display: flex;
+        flex-direction: column;
+    }
     .titulo {
         margin-top: 11%;
         margin-left: 16%;
-        position: relative;
         right: 74%;
         font-size: 1rem;
     }
