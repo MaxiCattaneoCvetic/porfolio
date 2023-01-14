@@ -202,7 +202,6 @@ html{
         grid-row-gap: 5rem;
 
     }
-
     .div_proyect{
         width: 90%;
         height: auto;
@@ -232,7 +231,7 @@ html{
     }
 
     .contenedor-img img{
-        width: 21rem;
+        width: 10rem;
         height: auto;
         margin-left: 25%;
         animation-name: float;
@@ -244,14 +243,19 @@ html{
     .titulo {
         margin-top: 11%;
         margin-left: 16%;
-        font-size: 1.5rem;
+        position: relative;
+        right: 74%;
+        font-size: 1rem;
     }
-
+.p-about{
+    font-size: 0.8rem;
+}
     .cv-d{
         position: relative;
         top: 1rem;
         left: 1rem;
         border: none;
+        font-size: 0.8rem;
         
     }
 
