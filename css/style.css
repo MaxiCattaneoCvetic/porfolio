@@ -28,7 +28,9 @@ html{
     font-size: 62, 5%;
 }
 
-
+.navbar-brand{
+    font-size: 0.5rem !important
+}
 /* dark styles */ 
 
 .dark{
