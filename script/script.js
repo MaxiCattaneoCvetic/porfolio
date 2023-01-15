@@ -1,7 +1,7 @@
 const typed = new Typed(`.typed`, {
 strings: [
     `<i class="skill">Full Stack developer</i>`,
-    `<i class="skill">Lic. Administrator</i>`,
+    `<i class="skill">Bussines Administrator</i>`,
 ],
 stringsElement: "#cadenas-texto",
 typeSpeed: 75,
@@ -17,8 +17,8 @@ cursorChar: "|",
 contentType: "html",
 });
 
-
-let btnNight = document.querySelector("#nightMode");
+try{
+	let btnNight = document.querySelector("#nightMode");
 btnNight.addEventListener(`click`, function (evento) {
 evento.preventDefault();
 let body = document.querySelector("#bod");
@@ -27,6 +27,10 @@ let nvBar = document.querySelector(".navbar");
 nvBar.setAttribute("style", "border: 3px solid rgb(184, 178, 178);");
 verClase()
 });
+}catch{
+	console.log("BTN disable");
+}
+
 
 function verClase() {
 	let body = document.querySelector("#bod");
@@ -57,40 +61,11 @@ const  renderProyects = arrProyects =>{
 		<h3>${element.h3}</h3>
 		<img src="${element.img}" alt="">
 		<p>${element.text}</p>
-		<span></span><a href="${element.git}" target="_blank" ">GitHub</a> <a href="${element.web}" target="_blank" ">Web</a></span>
+		<span></span><a href="${element.git}" class="proyect_link" target="_blank" ">GitHub</a> <a href="${element.web}" class="proyect_link" target="_blank" ">Web</a></span>
 		</div> `
-		
 	});
+
+
 }
 renderProyects(arrProyects)
 
-
-// SWIPPER CODE
-
-var swiper = new Swiper(".mySwiper", {
-	slidesPerView: 4,
-	centeredSlides: true,
-	spaceBetween: 30,
-	grabCursor: true,
-	pagination: {
-	el: ".swiper-pagination",
-	clickable: true,
-	},
-});
-
-//Automatic Swipper
-
-const carrusel = document.querySelector(".swiper-wrapper")
-
-let intervalo = null;
-
-const start =  () =>{
-	intervalo = setInterval(function(){},10);
-	carrusel.scrollLeft += 10;
-	console.log(carrusel);
-
-};
-
-const stop =() =>{};
-
-start()

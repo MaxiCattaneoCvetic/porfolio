@@ -44,10 +44,34 @@ html{
 }
 
 /* nav-bar styles HERE */
-
-.nav-item a :hover{
-    color: var(--colorPrincipal);
+.container-fluid{
+background-color: rgb(66, 65, 65);
+border-radius: 23px 30px 26px 24px;
 }
+.nav-item a{
+    color: var(--colorLetters)
+
+}
+.nav-item a:hover{
+    color: var(--colorPrincipal)
+
+}
+.active{
+    color: var(--colorLetters) !important
+}
+.active:hover{
+    color: var(--colorPrincipal) !important
+}
+
+.navbar-text{
+    color: var(--colorLetters) !important
+
+}
+.navbar-text:hover{
+        color: var(--colorPrincipal) !important;
+        cursor: pointer;
+}
+
 .navbar-brand{
     margin-left: 1rem;
 
@@ -59,7 +83,7 @@ html{
 }
 .fa-code {
     font-size: 1rem;
-    color: var(--colorBlackLetters);
+    color: var(--colorPrincipal);
 
 }
 
@@ -67,7 +91,7 @@ html{
 
 .titulo{
     margin-top: 15%;
-    margin-left: 34%;
+    margin-left: 30%;
 }
 
 
@@ -110,7 +134,7 @@ html{
 
 @keyframes float {
     0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 8%); }
+    50%  { transform: translate(0, 13%); }
     100%   { transform: translate(0, -0px); }   
 }
 
@@ -128,8 +152,9 @@ html{
 }
 
 .cv-d{
+    color: var(--colorPrincipal);
+    opacity: 60%;
     position: relative;
-    top: 1rem;
     left: 3rem;
     border: none;
     background: none;
@@ -139,11 +164,10 @@ html{
 .cv-d:hover{
     color: var(--colorPrincipal);
     scale: 1.2;
+    opacity: 100%;
     transition: 1000ms;
 
 }
-
-
 
 
 /* CARDS PROYECTS Desktop*/ 
@@ -196,30 +220,21 @@ html{
 /* CARDS PROYECTS mobile*/ 
 
 @media screen and (max-width: 955px){
-    .welcome_to{
-        font-size: 0.6rem;
-    }
-    .fa-solid{
-        font-size: 0.5rem;
-    }
-    .container-fluid{
-        flex-wrap: nowrap !important;
-    }
+    .navbar{
+        margin: 1rem;
 
-    .dropdown{
-        font-size: 0.5rem;
     }
-
+    .nav-item a{
+    font-size: 0.5rem;
     
-    .dropdown-menu li a{
-        font-size: 0.5rem;
     }
-    .collapse{
-        font-size: 0.5rem;
+    .navbar-toggler{
+        scale: 0.6;
     }
-    .navbar-toggler-icon{
-        font-size: 0.5rem;
+    .navbar-text{
+        font-size: 0.3rem;
     }
+
     .proyects_container{
         display: grid;
         grid-template-columns: repeat(2, 0.3fr);
@@ -236,8 +251,9 @@ html{
 
     .div_proyect a {
     text-decoration: none;
-    font-size: 0.5rem;
-    word-break:break-all;
+    font-size: 0.6rem;
+    font-weight: bolder;
+    padding: 0 2px;
     }
     .div_proyect p {
         text-align: center;
@@ -300,13 +316,15 @@ html{
         font-size: 0.7rem;
     }
     .cv-d{
+        color: var(--colorPrincipal);
+        opacity: 60%;
         position: relative;
-        top: 1rem;
+        bottom: 1.07rem;
         left: 1rem;
         border: none;
+        background: none;
+        font-weight: bolder;
         font-size: 0.5rem;
-        color: var(--colorPrincipal);
-        
     }
 
     .col{
@@ -334,6 +352,7 @@ html{
 .g1{
     border-radius: 10%;
     width: 80%;
+
 }
 
 .b{
@@ -405,3 +424,4 @@ html{
     text-decoration: underline;
 
 }
+
