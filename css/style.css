@@ -36,8 +36,8 @@ html{
 .dark{
     color:var(--colorLetters);
     background-image: url("../img/v1016-b-09.jpg");
+    z-index: -10;
 
-    
 }
 
 
@@ -343,7 +343,7 @@ border-radius: 23px 30px 26px 24px;
         word-break:break-all;
         font-size: 0.5rem;
     }
-    
+
 }
 
 /*Skills */ 
@@ -436,3 +436,47 @@ border-radius: 23px 30px 26px 24px;
 
 /* CONTACT  */
 
+.containter_contact{
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+}
+.containter_contact img {
+    animation-name: float;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 30%;
+    margin-left: 20rem;
+}
+
+/* FORM */
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#nombre{
+    width: 32rem;
+    background: none;
+    color:var(--colorLetters);
+}
+#email{
+    width: 32rem;
+    background: none;
+    color:var(--colorLetters);
+}
+#comments{
+    width: 32rem;
+    background: none;
+    color:var(--colorLetters);
+}
+#nombre::placeholder{
+    color: var(--colorLetters)
+}
+#email::placeholder{
+    color: var(--colorLetters)
+}
+#comments::placeholder{
+    color: var(--colorLetters)
+}
