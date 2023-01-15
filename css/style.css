@@ -36,6 +36,7 @@ html{
 .dark{
     color:var(--colorLetters);
     background-image: url("../img/v1016-b-09.jpg");
+
     
 }
 
@@ -223,6 +224,11 @@ border-radius: 23px 30px 26px 24px;
 /* CARDS PROYECTS mobile*/ 
 
 @media screen and (max-width: 955px){
+
+    .dark{
+        background-size: cover;
+
+    }
     .navbar{
         margin: 1rem;
 
