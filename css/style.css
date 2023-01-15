@@ -18,14 +18,13 @@
 
 #body{
     color: var(--colorBlackLetters);
-    background-color: var(--colorPrincipal);
-
-
 }
+
 html{
     margin: 0;
     padding: 0;
     font-size: 62, 5%;
+
 }
 
 .navbar-brand{
@@ -35,7 +34,9 @@ html{
 
 .dark{
     color:var(--colorLetters);
-    background-color: var(--colorBackground)
+    background-image: url(/img/v1016-b-09.jpg);
+    z-index: -100;
+    
 }
 
 
@@ -194,8 +195,10 @@ border-radius: 23px 30px 26px 24px;
     box-shadow: 0 0 10px var(--colorPrincipal);
 }
 .div_proyect a {
-    text-decoration: none;
+    text-decoration: underline;
     padding: 4%;
+    font-weight: bolder;
+    color: white;
 }
 .div_proyect p {
     text-align: center;
@@ -352,7 +355,7 @@ border-radius: 23px 30px 26px 24px;
 .g1{
     border-radius: 10%;
     width: 80%;
-
+    cursor: pointer;
 }
 
 .b{
@@ -409,7 +412,7 @@ border-radius: 23px 30px 26px 24px;
     box-shadow: 1px 6px 20px 0px  rgb(222, 125, 231);
 }
 .c7{
-    box-shadow: 1px 6px 7px 0px  rgb(95, 12, 121);
+    box-shadow: 1px 6px 10px 0px  rgb(96, 12, 121);
 }
 .c7:hover{
     box-shadow: 1px 6px 20px 0px  rgb(95, 12, 121);
@@ -424,4 +427,6 @@ border-radius: 23px 30px 26px 24px;
     text-decoration: underline;
 
 }
+
+/* CONTACT  */
 
