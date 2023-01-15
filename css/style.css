@@ -18,6 +18,7 @@
 
 #body{
     color: var(--colorBlackLetters);
+    background-image: url("../img/v1016-b-09.jpg");
 }
 
 html{
@@ -34,8 +35,7 @@ html{
 
 .dark{
     color:var(--colorLetters);
-    background-image: url("/img/v1016-b-09.jpg");
-    z-index: -100;
+    background-image: url("../img/v1016-b-09.jpg");
     
 }
 
