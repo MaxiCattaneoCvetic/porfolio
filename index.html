@@ -135,17 +135,19 @@
                 </div>
             </div>
         </section>
-        <section id="contact">
+        <section >
             <h2 class="contact_h2 titulos">Contact</h2>
             <div class="containter_contact">
                 <form>
-                    <h2>¡Work together!</h2>
-                    <fieldset class="datos">
-                        <input placeholder="Name" type="text" name="nombre" id="nombre" autocomplete="on"><br><br>
-                        <input placeholder="Email" type="email" name="email" id="email"><br><br>
+                    <h2 >¡Work together!</h2>
+                    <fieldset id="contact" class="datos">
+                        <input placeholder="Name" type="text" name="nombre" id="nombre" autocomplete="on"><br>
+                        <p class="nombreError"></p>
+                        <input placeholder="Email" type="email" name="email" id="email"><br>
+                        <p class="emailError"></p>
                         <textarea placeholder="comments" name="comments" id="comments"></textarea>
                     </fieldset>
-                    <button type="submit">Send</button>
+                    <button class="form-btn" type="submit">Send</button>
                 </form>
                 <div class="img-contact">
                     <img src="img/speech-bubble.png" alt="">

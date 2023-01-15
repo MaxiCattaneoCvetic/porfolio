@@ -69,3 +69,57 @@ const  renderProyects = arrProyects =>{
 }
 renderProyects(arrProyects)
 
+
+//FORM
+
+let validacionNombre = ()=>{
+	let nombre = document.querySelector("#nombre").value
+	let divERROR = document.querySelector(".nombreError")
+	if(nombre.length < 3){
+		divERROR.innerHTML = `EL nombre no puede contener menos de 3 caracteres`
+		divERROR.setAttribute("style","color:red")
+		return 1
+	}else if(nombre.length >= 3){
+		divERROR.innerHTML = ``;
+		return nombre
+	}
+}
+let validacionEmail = ()=>{
+	let email = document.querySelector("#email").value
+	let divERRORc = document.querySelector(".emailError")
+	if(email.includes("@")){
+		divERRORc.innerHTML = ``;
+		return email
+	}else if(!email.includes("@")){
+		divERRORc.innerHTML = `Por favor incluya un correo en formato válido`
+		divERRORc.setAttribute("style","color:red")
+		return 1
+	}
+}
+
+let normalizadorDatos = (nombre,email) =>{
+	let arrDatos =[]
+	let nombreLW = nombre.toLowerCase();
+	let emailLW = email.toLowerCase();
+	arrDatos.push(nombreLW);
+	arrDatos.push(emailLW);
+	console.log(arrDatos);
+	return arrDatos
+}
+// si esta mal retornan 1
+
+let btnForm = document.querySelector(".form-btn")
+console.log(btnForm);
+btnForm.addEventListener(`click`, function (evento){
+	evento.preventDefault()
+	// validacionNombre()
+	// validacionEmail()
+	let nombreCk = validacionNombre()
+	let emailCk = validacionEmail()
+	if(nombreCk != 0 && emailCk != 0){
+		normalizadorDatos(nombreCk,emailCk)
+	}else{
+		console.log("esta mal");
+	}
+
+})
