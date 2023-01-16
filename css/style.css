@@ -286,6 +286,9 @@ border-radius: 23px 30px 26px 24px;
         font-size: 1rem;
 
     }
+    .mySkills{
+        margin-bottom: 2.5rem !important;
+    }
 
 
 .contenedor-img{
@@ -345,6 +348,13 @@ border-radius: 23px 30px 26px 24px;
     }
 
     /* FORM */
+    .contact_h2 {
+        margin-top: 3.5rem !important;
+
+    }
+    .containter_contact{
+        margin-top: 2rem !important;
+    }
 
     form{
 
