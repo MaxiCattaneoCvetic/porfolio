@@ -50,7 +50,7 @@ const arrProyects = [
 { h3: "Proyect 1", img: "img/yoda.jpg", text: "HTML5,CSS3", git: "https://github.com/MaxiCattaneoCvetic/Heddle", web: "https://maxicattaneocvetic.github.io/Heddle/" },
 { h3: "Proyect 2", img: "img/yoda.jpg", text: "HTML5,CSS3", git: "https://maxicattaneocvetic.github.io/Merge/", web: "https://github.com/MaxiCattaneoCvetic/Merge" },
 { h3: "Proyect 3", img: "img/yoda.jpg", text: "HTML5,CSS3,JS", git: "https://github.com/MaxiCattaneoCvetic/porfolio", web: "https://maxicattaneocvetic.github.io/porfolio/" },
-{ h3: "Proyect 3", img: "img/yoda.jpg", text: "HTML5,CSS3,JS", git: "https://github.com/MaxiCattaneoCvetic/porfolio", web: "https://maxicattaneocvetic.github.io/porfolio/" }
+{ h3: "Proyect 3", img: "img/yoda.jpg", text: "HTML5,CSS3,JS", git: "https://github.com/MaxiCattaneoCvetic/porfolio", web: "https://maxicattaneocvetic.github.io/porfolio/" },
 ];
 
 const  renderProyects = arrProyects =>{
@@ -104,9 +104,21 @@ let normalizadorDatos = (nombre,email) =>{
 	arrDatos.push(nombreLW);
 	arrDatos.push(emailLW);
 	console.log(arrDatos);
+	let ok = true 
+	agradecer(ok,nombre)
 	return arrDatos
 }
 // si esta mal retornan 1
+
+let agradecer = (ok,nombre) =>{
+	let pAgradecer = document.querySelector(".agradecer")
+	if(ok){
+		pAgradecer.innerHTML = `Muchas gracias por contactarme ${nombre} en breve me contactare con 
+		tigo! `
+	}else{
+		return
+	}
+}
 
 let btnForm = document.querySelector(".form-btn")
 console.log(btnForm);
