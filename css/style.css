@@ -391,8 +391,17 @@ border-radius: 23px 30px 26px 24px;
     .wk{
         flex-direction: row !important;
     }
-    
+    .nombreError  {
+        font-size: 0.5rem;
+    }
+    .emailError{
+        font-size: 0.5rem;
+    }
+    .agradecer{
+        font-size: 0.5rem;
+        width: 15rem;
 
+    }
     }
 
     /* FIN MOBILE */

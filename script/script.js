@@ -113,8 +113,7 @@ let normalizadorDatos = (nombre,email) =>{
 let agradecer = (ok,nombre) =>{
 	let pAgradecer = document.querySelector(".agradecer")
 	if(ok){
-		pAgradecer.innerHTML = `Muchas gracias por contactarme ${nombre} en breve me contactare con 
-		tigo! `
+		pAgradecer.innerHTML = `Muchas gracias por contactarme ${nombre} en breve me contactare contigo! `
 	}else{
 		return
 	}
