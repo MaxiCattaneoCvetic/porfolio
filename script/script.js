@@ -47,8 +47,8 @@ function verClase() {
 // Proyects render
 
 const arrProyects = [
-{ h3: "Proyect 1", img: "img/yoda.jpg", text: "HTML5,CSS3", git: "https://github.com/MaxiCattaneoCvetic/Heddle", web: "https://maxicattaneocvetic.github.io/Heddle/" },
-{ h3: "Proyect 2", img: "img/yoda.jpg", text: "HTML5,CSS3", git: "https://maxicattaneocvetic.github.io/Merge/", web: "https://github.com/MaxiCattaneoCvetic/Merge" },
+{ h3: "Proyect 1", img: "img/yoda.jpg", text: "HTML5,CSS3", git: "https://github.com/MaxiCattaneoCvetic/Heddle", web: "" },
+{ h3: "Proyect 2", img: "img/yoda.jpg", text: "HTML5,CSS3", git: "https://maxicattaneocvetic.github.io/Merge/", web: "" },
 { h3: "Proyect 3", img: "img/yoda.jpg", text: "HTML5,CSS3,JS", git: "https://github.com/MaxiCattaneoCvetic/porfolio", web: "https://maxicattaneocvetic.github.io/porfolio/" },
 { h3: "Proyect 3", img: "img/yoda.jpg", text: "HTML5,CSS3,JS", git: "https://github.com/MaxiCattaneoCvetic/porfolio", web: "https://maxicattaneocvetic.github.io/porfolio/" },
 ];
