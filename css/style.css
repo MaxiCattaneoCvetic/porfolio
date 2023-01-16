@@ -389,7 +389,7 @@ border-radius: 23px 30px 26px 24px;
         gap: 10px !important;
     }
     .wk{
-        flex-direction: row;
+        flex-direction: row !important;
     }
     
 
