@@ -530,3 +530,16 @@ form{
     border: 2px solid white;
     border-radius: 19px 21px 24px 20px;
 }
+
+.wk{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+}
+.wk i {
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
