@@ -377,9 +377,22 @@ border-radius: 23px 30px 26px 24px;
     .img-contact img{
         display: none;
     }
+    footer p {
+        font-size: 0.5rem !important;
+        margin-top: 1.9rem !important;
+    }
+    .redes_container i{
+        font-size: 1rem;
+    }
+    .redes_container{
+        margin-right: 1rem !important;
+        gap: 10px !important;
+    }
+    
 
     }
 
+    /* FIN MOBILE */
 
 
 /*Skills */ 
@@ -543,3 +556,42 @@ form{
     cursor: pointer;
 }
 
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8rem;
+    align-items: center;
+    background-color: rgba(5, 41, 73, 0.288);
+
+}
+footer p {
+    font-size: 0.8rem;
+    margin-right: 13%;
+    margin-top: 1.2rem;
+}
+
+.redes_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-right: 10rem;
+}
+
+.redes_container a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin-top: 0.4rem;
+}
+
+.redes_container i:hover{
+    color: var(--colorPrincipal);
+    scale:1.5;
+    transition: 1000ms
+}
+.i3{
+    color: var(--colorPrincipal);
+}
