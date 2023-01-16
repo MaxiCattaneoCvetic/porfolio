@@ -97,12 +97,26 @@ let validacionEmail = ()=>{
 	}
 }
 
-let normalizadorDatos = (nombre,email) =>{
+let validacionComments = () =>{
+	let comments = document.querySelector("#comments").value
+	let divERROR = document.querySelector(".commentsError")
+	if(comments.length <= 1){
+		divERROR.innerHTML = `Por favor ingrese un comentario valido`
+		return 1
+	}else if(comments.length >1){
+		divERROR.innerHTML =""
+		return comments
+	}
+}
+
+let normalizadorDatos = (nombre,email,comments) =>{
 	let arrDatos =[]
 	let nombreLW = nombre.toLowerCase();
 	let emailLW = email.toLowerCase();
+	let commentsLW = comments.toLowerCase()
 	arrDatos.push(nombreLW);
 	arrDatos.push(emailLW);
+	arrDatos.push(commentsLW)
 	console.log(arrDatos);
 	let ok = true 
 	agradecer(ok,nombre)
@@ -110,28 +124,47 @@ let normalizadorDatos = (nombre,email) =>{
 }
 // si esta mal retornan 1
 
-let agradecer = (ok,nombre) =>{
+let msjAgradecer = (nombre)=>{
 	let pAgradecer = document.querySelector(".agradecer")
+	pAgradecer.innerHTML = `Muchas gracias por contactarme ${nombre} en breve me contactare contigo! `
+}
+
+let msjClear =()=>{
+	let pAgradecer = document.querySelector(".agradecer")
+	pAgradecer.innerHTML = ``
+
+}
+
+let agradecer = (ok,nombre) =>{
 	if(ok){
-		pAgradecer.innerHTML = `Muchas gracias por contactarme ${nombre} en breve me contactare contigo! `
+		msjAgradecer(nombre)
+		setTimeout(msjClear,4000)
 	}else{
 		return
 	}
 }
 
 let btnForm = document.querySelector(".form-btn")
-console.log(btnForm);
 btnForm.addEventListener(`click`, function (evento){
 	evento.preventDefault()
-	// validacionNombre()
-	// validacionEmail()
 	let nombreCk = validacionNombre()
 	let emailCk = validacionEmail()
-	if(nombreCk != 0 && emailCk != 0){
-		normalizadorDatos(nombreCk,emailCk)
+	let commentsCK = validacionComments()
+	if(nombreCk != 1 && emailCk != 1 && commentsCK != 1){
+		normalizadorDatos(nombreCk,emailCk,commentsCK)
 	}else{
 		console.log("esta mal");
 	}
 
 })
 
+let btnReset = document.querySelector(".r")
+btnReset.addEventListener(`click`,function(){
+	let divERRORc = document.querySelector(".emailError")
+	let divERROR = document.querySelector(".nombreError")
+	let divERRORcc = document.querySelector(".commentsError")
+	divERROR.innerHTML ="";
+	divERRORc.innerHTML ="";
+	divERRORcc.innerHTML ="";
+
+})

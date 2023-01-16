@@ -162,6 +162,9 @@ border-radius: 23px 30px 26px 24px;
     background: none;
     font-weight: bolder;
 }
+.cv-d a{
+    text-decoration: none;
+}
 
 .cv-d:hover{
     color: var(--colorPrincipal);
@@ -395,6 +398,9 @@ border-radius: 23px 30px 26px 24px;
         font-size: 0.5rem;
     }
     .emailError{
+        font-size: 0.5rem;
+    }
+    .commentsError{
         font-size: 0.5rem;
     }
     .agradecer{
