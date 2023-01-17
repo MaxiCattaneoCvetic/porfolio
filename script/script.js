@@ -103,6 +103,7 @@ let validacionComments = () =>{
 	let divERROR = document.querySelector(".commentsError")
 	if(comments.length <= 1){
 		divERROR.innerHTML = `Por favor ingrese un comentario valido`
+		divERROR.setAttribute("style","color:red")
 		return 1
 	}else if(comments.length >1){
 		divERROR.innerHTML =""
@@ -128,6 +129,8 @@ let normalizadorDatos = (nombre,email,comments) =>{
 let msjAgradecer = (nombre)=>{
 	let pAgradecer = document.querySelector(".agradecer")
 	pAgradecer.innerHTML = `Muchas gracias por contactarme ${nombre} en breve me contactare contigo! `
+	let form = document.querySelector("form")
+	form.reset()
 }
 
 let msjClear =()=>{
@@ -148,11 +151,13 @@ let agradecer = (ok,nombre) =>{
 let btnForm = document.querySelector(".form-btn")
 btnForm.addEventListener(`click`, function (evento){
 	evento.preventDefault()
+	let form = document.querySelector("form")
 	let nombreCk = validacionNombre()
 	let emailCk = validacionEmail()
 	let commentsCK = validacionComments()
 	if(nombreCk != 1 && emailCk != 1 && commentsCK != 1){
-		normalizadorDatos(nombreCk,emailCk,commentsCK)
+		normalizadorDatos(nombreCk,emailCk,commentsCK);
+		form.submit()
 	}else{
 		console.log("esta mal");
 	}
