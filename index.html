@@ -17,7 +17,7 @@
 </head>
 
 <body id="bod" class="dark">
-    <header id ="inicio">
+    <header id="inicio">
         <!-- <div>
             <button id="nightMode"><i class="fa-solid fa-moon"></i><span> Night Mode</span></button>
         </div> -->
@@ -64,7 +64,8 @@
                             <p class="p-about">Amante de la tecnologia, apasionado por aprender, motivado por nuevos
                                 desafios!
                             </p>
-                            <button class="cv-d"><a href="cv/MaximilianoCattaneoCvetic_CV.pdf" download>Download CV</a></button>
+                            <button class="cv-d"><a href="cv/MaximilianoCattaneoCvetic_CV.pdf" download>Download
+                                    CV</a></button>
                         </div>
                     </div>
                 </section>
@@ -138,17 +139,17 @@
         <section>
             <h2 class="contact_h2 titulos">Contact</h2>
             <div class="containter_contact">
-                <form>
+                <form action="https://actionforms.io/e/r/formporfolio" method="post">
                     <div class="wk">
                         <h2 class="titulos">Work together!</h2>
                         <i class="fa-solid fa-code i2"></i>
                     </div>
                     <fieldset id="contact" class="datos">
-                        <input placeholder="Name" type="text" name="nombre" id="nombre" autocomplete="on"><br>
+                        <input placeholder="Name" type="text" name="nombre" id="nombre" autocomplete="on" required><br>
                         <p class="nombreError"></p>
-                        <input placeholder="Email" type="email" name="email" id="email"><br>
+                        <input placeholder="Email" type="email" name="email" id="email" required><br>
                         <p class="emailError"></p>
-                        <textarea placeholder="comments" name="comments" id="comments"></textarea>
+                        <textarea placeholder="comments" name="comments" id="comments" required></textarea>
                         <p class="commentsError"></p>
                     </fieldset>
                     <div class="btn-container">
@@ -164,12 +165,13 @@
         </section>
 
         <footer>
-                <p>  <i class="fa-regular i3 fa-copyright"></i>       Hecho por Maximiliano Cattaneo Cvetic</p>
-                <div class="redes_container">
-                    <a href="https://www.linkedin.com/in/mcvetic/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/maximilianocattaneocvetic/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://github.com/MaxiCattaneoCvetic/" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
+            <p> <i class="fa-regular i3 fa-copyright"></i> Hecho por Maximiliano Cattaneo Cvetic</p>
+            <div class="redes_container">
+                <a href="https://www.linkedin.com/in/mcvetic/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/maximilianocattaneocvetic/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/MaxiCattaneoCvetic/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
 
         </footer>
     </main>
