@@ -615,3 +615,22 @@ footer p {
     color: var(--colorPrincipal);
 }
 
+.informacion_proyectos{
+    display: none;
+    width: 30%;
+    
+}
+
+.ab{
+    display: flex;
+    position: relative;
+}
+
+.container_informacion{
+margin-left: 7rem;
+}
+
+.more{
+    font-weight: bolder !important;
+    font-size: 1.2rem;
+}
