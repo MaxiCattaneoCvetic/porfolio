@@ -252,7 +252,7 @@ border-radius: 23px 30px 26px 24px;
         grid-template-columns: repeat(2, 0.3fr);
         grid-template-rows: repeat(3, 0.1fr);
         grid-column-gap: 2rem;
-        grid-row-gap: 5rem;
+        grid-row-gap: 1rem;
 
     }
     .div_proyect{
@@ -407,8 +407,29 @@ border-radius: 23px 30px 26px 24px;
     .agradecer{
         font-size: 0.5rem;
         width: 15rem;
-
     }
+
+    .informacion_proyectos{
+        font-size: 0.4rem;
+        width: 100% !important;
+        font-weight: normal !important;
+        letter-spacing: normal  !important; 
+    }
+    .h2_descripcion{
+        font-size: 0.7rem;
+    }
+
+    .more{
+        font-size: 0.5rem !important;
+    }
+
+    .container_informacion{
+        margin-left: 2rem !important;
+    }
+    .d-java{
+        margin-top: 1rem !important;
+    }
+
     }
 
     /* FIN MOBILE */
@@ -617,7 +638,10 @@ footer p {
 
 .informacion_proyectos{
     display: none;
-    width: 30%;
+    width: 40%;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
     
 }
 
@@ -633,4 +657,12 @@ margin-left: 7rem;
 .more{
     font-weight: bolder !important;
     font-size: 1.2rem;
+}
+
+.d-java{
+    margin-top: 6rem;
+}
+
+.h2_descripcion{
+    font-size: 1rem;
 }

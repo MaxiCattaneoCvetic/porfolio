@@ -199,12 +199,32 @@ btnReset.addEventListener(`click`,function(){
 })
 
 
-let btnMore = document.querySelector(".more")
+let btnMore = document.querySelector(".btnmore")
 
 btnMore.addEventListener(`click`, function (evento) {
 	let informacion_proyectos = document.querySelector(".informacion_proyectos")
-	informacion_proyectos.classList.toggle("ab")
-	console.log("hiciste click");
+	let booleanInfo = informacion_proyectos.classList.toggle("ab");
+	if(booleanInfo){
+		btnMore.textContent = "Cerrar"
+	}else{
+		btnMore.textContent = "+MORE"
+	}
+
+	
+})
+
+
+let btnMorejs = document.querySelector(".jsbtn")
+
+btnMorejs.addEventListener(`click`, function (evento) {
+	let informacion_proyectos_js = document.querySelector(".java");
+	let booleanInfoJs = informacion_proyectos_js.classList.toggle("ab")
+	if(booleanInfoJs){
+		btnMorejs.textContent = "Cerrar"
+	}else{
+		btnMorejs.textContent = "+MORE"
+	}
+	
 	
 })
 
