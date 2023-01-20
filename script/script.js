@@ -5,11 +5,11 @@ strings: [
 ],
 stringsElement: "#cadenas-texto",
 typeSpeed: 75,
-startDelay: 300,
-backSpeed: 75,
+startDelay: 1,
+backSpeed: 40,
 smartBackspace: true,
 shuffle: false,
-backDelay: 1500,
+backDelay: 550,
 loop: true,
 loopCount: false,
 showCursor: true,
@@ -51,7 +51,7 @@ const arrProyects = [
 	{ h3: "User-Login", img: "img/user.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/Login", web: "https://maxicattaneocvetic.github.io/Login/" },
 	{ h3: "MergeWeb", img: "img/landing-page.png", text: "HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/Merge", web: "https://maxicattaneocvetic.github.io/Merge/" },
 	{ h3: "Porfolio", img: "img/web-page.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/porfolio", web: "https://maxicattaneocvetic.github.io/porfolio/" },
-	{ h3: "Tiro al blanco", img: "img/tiro-al-blanco.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/TiroAlBlanco", web: "https://maxicattaneocvetic.github.io/TiroAlBlanco/" }
+	{ h3: "Tiro al blanco<br>web", img: "img/tiro-al-blanco.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/TiroAlBlanco", web: "https://maxicattaneocvetic.github.io/TiroAlBlanco/" }
 ];
 
 const arrProyectsJava = [
