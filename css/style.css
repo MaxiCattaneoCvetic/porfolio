@@ -197,6 +197,7 @@ border-radius: 23px 30px 26px 24px;
 
 .proyects_container h3{
     font-size: 1rem;
+    font-weight: bold !important;
 }
 
 .div_proyect{
@@ -652,7 +653,6 @@ footer p {
     font-size: 0.9rem;
     font-weight: bolder;
     letter-spacing: 0.1rem;
-    
 }
 
 .ab{
