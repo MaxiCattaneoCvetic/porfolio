@@ -152,8 +152,6 @@ let normalizadorDatos = (nombre,email,comments) =>{
 let msjAgradecer = (nombre)=>{
 	let pAgradecer = document.querySelector(".agradecer")
 	pAgradecer.innerHTML = `Muchas gracias por contactarme ${nombre} en breve me contactare contigo! `
-	let form = document.querySelector("form")
-	form.reset()
 }
 
 let msjClear =()=>{

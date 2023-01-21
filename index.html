@@ -153,21 +153,25 @@
         <section>
             <h2 class="contact_h2 titulos">Contact</h2>
             <div class="containter_contact">
-                <form action="https://formbold.com/s/94NEV" method="post">
+                <form action="https://formspree.io/f/myyazlqr" method="POST">
                     <div class="wk">
                         <h2 class="titulos">Work together!</h2>
                         <i class="fa-solid fa-code i2"></i>
                     </div>
-                    <fieldset id="contact" class="datos">
-                        <input placeholder="Name" type="text" name="nombre" id="nombre" autocomplete="on" required><br>
-                        <p class="nombreError"></p>
-                        <input placeholder="Email" type="email" name="email" id="email" required><br>
-                        <p class="emailError"></p>
-                        <textarea placeholder="comments" name="comments" id="comments" required></textarea>
-                        <p class="commentsError"></p>
-                    </fieldset>
-                    <div class="btn-container">
-                        <button class="form-btn" type="submit">Send</button>
+                    <form id="myForm" action="https://formspree.io/f/myyazlqr" method="POST">
+                        <fieldset id="contact" class="datos">
+                            <label for="nombre"></label>
+                            <input placeholder="Name" type="text" name="nombre" id="nombre" autocomplete="on" required><br>
+                            <p class="nombreError"></p>
+                            <label for="email"></label>
+                            <input placeholder="Email" type="email" name="email" id="email" required><br>
+                            <p class="emailError"></p>
+                            <label for="comments"></label>
+                            <textarea placeholder="comments" name="comments" id="comments" required></textarea>
+                            <p class="commentsError"></p>
+                        </fieldset>
+                        <div class="btn-container">
+                            <button class="form-btn" type="submit">Send</button>
                         <button class="form-btn r" type="reset">reset</button>
                     </div>
                     <p class="agradecer"></p>
