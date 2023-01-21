@@ -218,10 +218,12 @@ border-radius: 23px 30px 26px 24px;
 }
 .div_proyect img {
     height: 8rem;
-    width: 10rem
+    width: 10rem;
     
 }
-
+.Java img{
+    margin-bottom: 1.2rem;
+}
 .div_proyect:hover{
     transform: scale(1.05);
     transition: 2500ms;
@@ -286,7 +288,9 @@ border-radius: 23px 30px 26px 24px;
     .div_proyect img {
         height: 3rem;
         width: 3.8rem;
-
+    }
+    .Java img{
+        margin-bottom: 0rem !important;
     }
 
     .div_proyect:hover{
@@ -370,9 +374,8 @@ border-radius: 23px 30px 26px 24px;
         margin-top: 2rem !important;
     }
 
-    form{
 
-    }
+
     #nombre{
         width: 15rem !important;
         background: none;

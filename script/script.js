@@ -83,7 +83,7 @@ const  renderProyectsJava = arrProyectsJava =>{
 		tarjetasProyectjava.innerHTML += `
 		<div class= "div_proyect">
 		<h3 style= "font-weight:bolder">${element.h3}</h3>
-		<img src="${element.img}" alt=""> <br><br>
+		<img src="${element.img}" alt="">
 		<a href="${element.git}" class="proyect_link" target="_blank" ">GitHub</a>
 		</div> `
 	});
