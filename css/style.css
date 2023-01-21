@@ -13,6 +13,7 @@
     --colorBlackLetters: black;
     --colorBackground: rgb(46, 45, 45);
     --colorPrincipal: rgb(20, 109, 187);
+    --boxColor : rgb(0 119 255);
     
 }
 
@@ -95,7 +96,7 @@ border-radius: 23px 30px 26px 24px;
 
 .titulo{
     margin-top: 15%;
-    margin-left: 30%;
+    margin-left: 27%;
 }
 
 
@@ -186,7 +187,7 @@ border-radius: 23px 30px 26px 24px;
     text-decoration: underline;
 }
 .proyects_container{
-    margin-top: 8%;
+    margin-top: 4%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,11 +195,15 @@ border-radius: 23px 30px 26px 24px;
     gap: 4%;
 }
 
+.proyects_container h3{
+    font-size: 1rem;
+}
+
 .div_proyect{
     border-radius: 10%;
     height: 100%;
     padding: 2%;
-    box-shadow: 0 0 10px var(--colorPrincipal);
+    box-shadow: 0 0 10px var(--boxColor)
 }
 .div_proyect a {
     text-decoration: underline;
@@ -255,7 +260,10 @@ border-radius: 23px 30px 26px 24px;
         grid-template-rows: repeat(3, 0.1fr);
         grid-column-gap: 2rem;
         grid-row-gap: 1rem;
+    }
 
+    .proyects_container h3{
+        font-size: 0.6rem !important;
     }
     .div_proyect{
         width: 90%;
@@ -276,7 +284,7 @@ border-radius: 23px 30px 26px 24px;
     }
     .div_proyect img {
         height: 3rem;
-        width: 4.8rem;
+        width: 3.8rem;
 
     }
 
@@ -418,7 +426,7 @@ border-radius: 23px 30px 26px 24px;
         letter-spacing: normal  !important; 
     }
     .h2_descripcion{
-        font-size: 0.7rem;
+        font-size: 0.7rem !important;
     }
 
     .more{
@@ -668,4 +676,3 @@ margin-left: 7rem;
 .h2_descripcion{
     font-size: 1rem;
 }
-

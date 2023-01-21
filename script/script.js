@@ -1,7 +1,7 @@
 const typed = new Typed(`.typed`, {
 strings: [
-    `<i class="skill">Full Stack developer</i>`,
-    `<i class="skill">Bussines Administrator</i>`,
+    `<i class="skill">Developer</i>`,
+    `<i class="skill">Licenciado en administración</i>`,
 ],
 stringsElement: "#cadenas-texto",
 typeSpeed: 75,
@@ -55,8 +55,8 @@ const arrProyects = [
 ];
 
 const arrProyectsJava = [
-	{ h3: "Landing Page", img: "img/browser.png", text: "HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/Landing-Page", web: "https://maxicattaneocvetic.github.io/Landing-Page/" },
-	{ h3: "User-Login", img: "img/user.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/Login", web: "https://maxicattaneocvetic.github.io/Login/" },
+	{ h3: "InstitutoDH", img: "img/browser.png", text: "Patrones <br>Factory, Herencia", git: "https://github.com/MaxiCattaneoCvetic/InstitutoDH"},
+	{ h3: "Puertos & Contenedores", img: "img/user.png", text: "Java", git: "https://github.com/MaxiCattaneoCvetic/Contenedores-Puertos"},
 	{ h3: "MergeWeb", img: "img/landing-page.png", text: "HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/Merge", web: "https://maxicattaneocvetic.github.io/Merge/" },
 	{ h3: "Porfolio", img: "img/web-page.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/porfolio", web: "https://maxicattaneocvetic.github.io/porfolio/" },
 	{ h3: "Tiro al blanco", img: "img/tiro-al-blanco.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/TiroAlBlanco", web: "https://maxicattaneocvetic.github.io/TiroAlBlanco/" }
@@ -86,7 +86,7 @@ const  renderProyectsJava = arrProyectsJava =>{
 		<h3 style= "font-weight:bolder">${element.h3}</h3>
 		<img src="${element.img}" alt="">
 		<p>${element.text}</p>
-		<span></span><a href="${element.git}" class="proyect_link" target="_blank" ">GitHub</a> <a href="${element.web}" class="proyect_link" target="_blank" ">Web</a></span>
+		<a href="${element.git}" class="proyect_link" target="_blank" ">GitHub</a>
 		</div> `
 	});
 }
