@@ -690,4 +690,5 @@ margin-left: 7rem;
 
 .h2_descripcion{
     font-size: 1rem;
+    text-decoration: underline  1px  var(--colorPrincipal);
 }
