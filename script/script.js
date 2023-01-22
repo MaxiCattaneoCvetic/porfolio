@@ -47,9 +47,9 @@ function verClase() {
 // Proyects render
 
 const arrProyects = [
-	{ h3: "Landing Page", img: "img/browser.png", text: "HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/Landing-Page", web: "https://maxicattaneocvetic.github.io/Landing-Page/" },
 	{ h3: "User-Login", img: "img/user.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/Login", web: "https://maxicattaneocvetic.github.io/Login/" },
 	{ h3: "MergeWeb", img: "img/landing-page.png", text: "HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/Merge", web: "https://maxicattaneocvetic.github.io/Merge/" },
+	{ h3: "Landing Page", img: "img/browser.png", text: "HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/Landing-Page", web: "https://maxicattaneocvetic.github.io/Landing-Page/" },
 	{ h3: "Porfolio", img: "img/web-page.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/porfolio", web: "https://maxicattaneocvetic.github.io/porfolio/" },
 	{ h3: "Tiro al blanco web", img: "img/tiro-al-blanco.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/TiroAlBlanco", web: "https://maxicattaneocvetic.github.io/TiroAlBlanco/" },
 	{ h3: "To-do App", img: "img/to-do-list.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/To-do-App", web: "https://maxicattaneocvetic.github.io/To-do-App/" }
