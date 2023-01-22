@@ -208,6 +208,7 @@ btnMore.addEventListener(`click`, function (evento) {
 		btnMore.textContent = "Cerrar"
 	}else{
 		btnMore.textContent = "+MORE"
+
 	}
 
 	
