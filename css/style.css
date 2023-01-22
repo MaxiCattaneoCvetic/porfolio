@@ -187,12 +187,13 @@ border-radius: 23px 30px 26px 24px;
     text-decoration: underline;
 }
 .proyects_container{
-    margin-top: 4%;
-    display: flex;
+    margin-top: 4rem;
+    display: grid;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 4%;
+    grid-template-columns: repeat(4, 0.1fr);
+    grid-template-rows: repeat(3, 0.1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
 }
 
 .proyects_container h3{
@@ -201,17 +202,23 @@ border-radius: 23px 30px 26px 24px;
 }
 
 .div_proyect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     border-radius: 10%;
     height: 100%;
-    padding: 2%;
+    padding: 1rem;
     box-shadow: 0 0 10px var(--boxColor)
 }
+
 .div_proyect a {
     text-decoration: underline;
     padding: 4%;
     font-weight: bolder;
     color: white;
 }
+
 .div_proyect p {
     text-align: center;
     margin: 6%;
@@ -298,7 +305,7 @@ border-radius: 23px 30px 26px 24px;
         transition: 2500ms;
     }
     .div_proyect h3 {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     .titulos{
         font-size: 0.8rem;
@@ -443,6 +450,11 @@ border-radius: 23px 30px 26px 24px;
     .d-java{
         margin-top: 1rem !important;
     }
+    .Java a {
+        margin-top: 0.5rem;
+    }
+
+
 
     }
 

@@ -51,7 +51,8 @@ const arrProyects = [
 	{ h3: "User-Login", img: "img/user.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/Login", web: "https://maxicattaneocvetic.github.io/Login/" },
 	{ h3: "MergeWeb", img: "img/landing-page.png", text: "HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/Merge", web: "https://maxicattaneocvetic.github.io/Merge/" },
 	{ h3: "Porfolio", img: "img/web-page.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/porfolio", web: "https://maxicattaneocvetic.github.io/porfolio/" },
-	{ h3: "Tiro al blanco<br>web", img: "img/tiro-al-blanco.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/TiroAlBlanco", web: "https://maxicattaneocvetic.github.io/TiroAlBlanco/" }
+	{ h3: "Tiro al blanco<br>web", img: "img/tiro-al-blanco.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/TiroAlBlanco", web: "https://maxicattaneocvetic.github.io/TiroAlBlanco/" },
+	{ h3: "To-do App", img: "img/to-do-list.png", text: "JS, HTML5, CSS3", git: "https://github.com/MaxiCattaneoCvetic/To-do-App", web: "https://maxicattaneocvetic.github.io/To-do-App/" }
 ];
 
 const arrProyectsJava = [
@@ -59,6 +60,9 @@ const arrProyectsJava = [
 	{ h3: "Puertos & Contenedores", img: "img/container.png", git: "https://github.com/MaxiCattaneoCvetic/Contenedores-Puertos"},
 	{ h3: "Calculador de impuestos<br> municipal", img: "img/impuesto.png", git: "https://github.com/MaxiCattaneoCvetic/Calculador-de-impuesto-segun-barrio-casa"},
 	{ h3: "Tamagochi", img: "img/tamagochi.png",git: "https://github.com/MaxiCattaneoCvetic/Tamagochi"},
+	{ h3: "Carrito de compras", img: "img/carrito-de-compras.png",git: "https://github.com/MaxiCattaneoCvetic/carrito-compras"},
+	{ h3: "Zoo", img: "img/zoo.png",git: "https://github.com/MaxiCattaneoCvetic/Zoo-dh"},
+	{ h3: "Pizzeria", img: "img/pizzeria.png",git: "https://github.com/MaxiCattaneoCvetic/Pizzeria"},
 ];
 
 const  renderProyects = arrProyects =>{
